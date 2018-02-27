@@ -50,7 +50,7 @@ rpc_client.call('add', data={'a': 3, 'b': 4})
 response = rpc_client.call_and_wait(
     'add', data={'a': 1, 'b': 1}
 )
-assert response.data == 2
+assert response.data['answer'] == 2
 ```
 
 ## API
